@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Playfair+Display:wght@400;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #d4af37;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --background-image-texture: url('https://www.transparenttextures.com/patterns/stardust.png');
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans overflow-x-hidden selection:bg-white/20 selection:text-white;
+  }
+}
+
+/* Base custom styles to ensure minimalist look */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
